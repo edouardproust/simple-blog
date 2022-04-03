@@ -43,7 +43,7 @@ require_once 'functions.php';
 
   <main role="main" class="container">
     <div class="starter-template">
+      <!-- Don't show title if is a blog post -->
       <?php if (strpos($_SERVER["SCRIPT_NAME"], 'blog/post.php') === false) : ?>
-        <!-- Don't show title if is a blog post -->
         <h1><?= $title ?></h1>
       <?php endif; ?>
