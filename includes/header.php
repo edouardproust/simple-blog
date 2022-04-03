@@ -1,5 +1,10 @@
 <?php
+<<<<<<< HEAD
 require_once 'config.php';
+=======
+
+require dirname(__DIR__) . '/config.php';
+>>>>>>> c3ceb0717fdaa5dc02bce29adc2202109f489965
 require_once 'functions/login.php';
 require_once 'functions.php';
 
@@ -13,7 +18,7 @@ require_once 'functions.php';
   <meta name="description" content="">
   <meta name="author" content="Edouard Proust">
   <meta name="generator" content="The Developer Fastlane">
-  <title><?php title_dyn($title) ?></title>
+  <title><?php $title ?? SITE_NAME ?></title>
 
   <link rel="canonical" href="https://getbootstrap.comexamples/starter-template/">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">

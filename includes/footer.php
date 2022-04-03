@@ -1,8 +1,11 @@
 <?php
 
 $col_width = 6;
+<<<<<<< HEAD
 
 include 'nav.php';
+=======
+>>>>>>> c3ceb0717fdaa5dc02bce29adc2202109f489965
 
 ?>
 
