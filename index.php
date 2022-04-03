@@ -1,4 +1,5 @@
 <?php
+
 $title = "This is a demo website made with vanilla PHP.";
 require 'includes/header.php';
 ?>

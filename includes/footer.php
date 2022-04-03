@@ -1,6 +1,6 @@
 <?php
 
-$col_width = 4;
+$col_width = 6;
 
 include 'nav.php';
 
@@ -17,32 +17,9 @@ include 'nav.php';
         <div class="row">
 
             <div class="col-md-<?= $col_width ?>">
-                <h5>Pages list</h5>
+                <h5><?= SITE_NAME ?></h5>
                 <ul class="list-unstyled">
-                    <?= nav_menu($main_menu); ?>
-                </ul>
-            </div>
-
-            <div class="col-md-4">
-                <h5>Admin</h5>
-                <ul class="list-unstyled">
-                    <?php require_once(dirname(__DIR__) . DIRECTORY_SEPARATOR . 'includes' . DIRECTORY_SEPARATOR . 'functions/admin_dashboard.php') ?>
-                    <?php foreach (admin_dashboard_tiles() as $tile) : ?>
-                        <?= admin_menu_item('admin/' . $tile['link'], $tile['header'] . ': ' . $tile['title']) ?>
-                    <?php endforeach ?>
-                </ul>
-                <?= foo_newsletter("</div><div class='col-md-$col_width'>", '') ?>
-                <h5>Stats</h5>
-                <ul class="list-unstyled">
-                    <li>
-                        <?php
-                        require_once(dirname(__DIR__) . DIRECTORY_SEPARATOR . 'includes' . DIRECTORY_SEPARATOR . 'functions/counters.php');
-                        counter_page_views_increment('total');
-                        counter_page_views_increment(date("Y-m-d"));
-                        ?>
-                        <!-- // Display counter snipet -->
-                        <b><?= counter_page_views_int('total') ?></b> page view<?php if (counter_page_views_int('total') > 1) : ?>s<?php endif; ?>
-                    </li>
+                    <?= nav_menu(MAIN_MENU); ?>
                 </ul>
             </div>
 
