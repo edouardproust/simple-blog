@@ -4,7 +4,10 @@ SET NAMES utf8;
 SET time_zone = '+00:00';
 SET foreign_key_checks = 0;
 SET sql_mode = 'NO_AUTO_VALUE_ON_ZERO';
+<<<<<<< HEAD
 
+=======
+>>>>>>> 563c5c9a28714e3be564f521393ffc88646a97f3
 SET NAMES utf8mb4;
 
 CREATE TABLE `authors` (
