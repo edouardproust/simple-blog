@@ -2,14 +2,14 @@
 
 const SITE_NAME = "Blog";
 
-const APP_ENV = 'prod';
+const APP_ENV = 'dev';
 
 const DB_TYPE = 'mysql';
-const DB_HOST = '159.223.211.224';
-const DB_PORT = '';
-const DB_NAME = 'fxsmhrmnvc';
-const DB_USERNAME = 'fxsmhrmnvc';
-const DB_PASSWORD = 'Yzk5V5wDem';
+const DB_HOST = 'localhost';
+const DB_PORT = '8000';
+const DB_NAME = 'main';
+const DB_USERNAME = 'root';
+const DB_PASSWORD = 'root';
 
 const MAIN_MENU = [
     ['index.php', 'Home'],

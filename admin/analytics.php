@@ -4,12 +4,14 @@ require_once "../includes/functions/login.php";
 redirect_if_not_connected('../pages/login.php');
   
 $title = "Analytics";
-require_once '../includes/header.php'; 
 require_once '../includes/functions/analytics.php'; 
 require_once '../includes/functions/counters.php'; // We need to reinclude it (in the footer is too late)
 require_once '../class/Blog/BreadcrumbBlog.php';
-
 ?>
+
+
+<?php require '../includes/header.php' ?>
+
 <p class="lead mb-5">Here are some insights on how many pages has been visited on your website since it was created.</p>
 
 <div class="row">

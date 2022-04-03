@@ -1,11 +1,6 @@
 <?php
 
 $col_width = 6;
-<<<<<<< HEAD
-
-include 'nav.php';
-=======
->>>>>>> c3ceb0717fdaa5dc02bce29adc2202109f489965
 
 ?>
 
@@ -29,8 +24,8 @@ include 'nav.php';
             <?= foo_newsletter('<div style="display: none">', '') ?>
             <div class="col-md-<?= $col_width ?>">
                 <h5>Newsletter</h5>
-                <small class="form-text text-muted mb-2">Get awsome discounts and unique recipes straight into your inbox! (We hate spam as much as you do)</small>
-                <form action="pages/newsletter.php" method="POST">
+                <small class="form-text text-muted mb-2">Be informed when a post is published (We hate spam as much as you do)</small>
+                <form action="../pages/newsletter.php" method="POST">
                     <div class="form-row mb-2">
                         <div class="col">
                             <input type="text" class="form-control" name="firstname" placeholder="Firstname">

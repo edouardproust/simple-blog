@@ -6,10 +6,10 @@ require_once $rootPath . 'class/PDO/BlogPDO.php';
 require_once $rootPath . 'class/Blog/BreadcrumbBlog.php';
 
 $pictures_folder_root = $rootPath . 'assets/img/';
-$featured_images_folder = $pictures_folder_root . 'uploads/blog/featured_image/';
-$author_picture_folder = $pictures_folder_root . 'uploads/blog/authors/';
+$featured_images_folder = $pictures_folder_root . 'uploads/posts/';
+$author_picture_folder = $pictures_folder_root . 'uploads/authors/';
 
-$pdo = new BlogPDO($rootPath . 'data/blog.db');
+$pdo = new BlogPDO;
 $error = null;
 $isset_author = false;
 try {
@@ -104,9 +104,6 @@ $bc_post = new BreadcrumbBlog(
             <?php endif ?>
         </div>
     </div>
-
-
-
 
 <?php endif ?>
 

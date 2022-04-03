@@ -1,5 +1,9 @@
 <?php
 
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
 $rootPath = '../../';
 require_once $rootPath . "includes/functions/login.php";
 require_once $rootPath . 'class/PDO/BlogPDO.php';

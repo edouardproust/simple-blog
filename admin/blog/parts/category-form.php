@@ -1,5 +1,5 @@
 <?php
-$pictures_folder = $rootPath . 'assets/img/uploads/blog/featured_image/';
+$pictures_folder = $rootPath . 'assets/img/uploads/posts/';
 require_once $rootPath . 'class/Modals/Modal.php';
 
 ?>

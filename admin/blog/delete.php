@@ -10,7 +10,7 @@ if(isset($_GET['type'])) {
         echo $post_type = $_GET['type'];
         // Update the following line if new post-types created or in case of post-types reordering
             $post_type === "post" ? $post_type_index = 'index.php' : $post_type_index = 'index-cat-auth.php';
-        $pdo = new BlogPDO($rootPath . 'data/blog.db');
+        $pdo = new BlogPDO;
         $error = null;
         try {
             if(isset($_GET['id'])) {

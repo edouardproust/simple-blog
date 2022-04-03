@@ -8,8 +8,8 @@ $title = 'Blog';
 require_once '../class/Post.php';
 require_once '../class/PDO/BlogPDO.php';
 
-$images_folder = '../assets/img/uploads/blog/featured_image/';
-$pdo = new BlogPDO('../data/blog.db');
+$images_folder = '../assets/img/uploads/posts/';
+$pdo = new BlogPDO;
 
 $error = null;
 $message = null;

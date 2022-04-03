@@ -1,12 +1,12 @@
 <?php
 
-$pictures_folder = $rootPath . 'assets/img/uploads/blog/featured_image/';
+$pictures_folder = $rootPath . 'assets/img/uploads/posts/';
 require_once $rootPath . 'class/FileUpload/ImageUploader.php';
 require_once $rootPath . 'class/Modals/Modal.php';
 
 // Fill select lists with authors and categories
 
-$pdo = new BlogPDO('../../data/blog.db');
+$pdo = new BlogPDO;
 $error = null;
 try {
     $query = $pdo->query("SELECT name FROM categories ORDER BY id ASC");

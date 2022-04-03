@@ -1,6 +1,6 @@
 <?php
 
-$pictures_folder = $rootPath . 'assets/img/uploads/blog/authors/';
+$pictures_folder = $rootPath . 'assets/img/uploads/authors/';
 require_once $rootPath . 'class/FileUpload/ImageUploader.php';
 require_once $rootPath . 'class/Modals/Modal.php';
 

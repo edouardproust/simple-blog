@@ -1,10 +1,6 @@
 <?php
-<<<<<<< HEAD
-require_once 'config.php';
-=======
 
-require dirname(__DIR__) . '/config.php';
->>>>>>> c3ceb0717fdaa5dc02bce29adc2202109f489965
+require_once dirname(__DIR__) . '/config.php';
 require_once 'functions/login.php';
 require_once 'functions.php';
 

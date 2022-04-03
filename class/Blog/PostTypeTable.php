@@ -15,7 +15,7 @@ class PostTypeTable
     public function getPostTypeTable(bool $show_view_btn = true)
     {
         $error = null;
-        $pdo = new BlogPDO($this->rootPath . 'data/blog.db');
+        $pdo = new BlogPDO;
 
         foreach ($this->db_tables as $table_name => $data) {
             $fields = implode(', ', $data['fields']);
