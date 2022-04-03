@@ -4,10 +4,6 @@ SET NAMES utf8;
 SET time_zone = '+00:00';
 SET foreign_key_checks = 0;
 SET sql_mode = 'NO_AUTO_VALUE_ON_ZERO';
-
-CREATE DATABASE `fxsmhrmnvc` /*!40100 DEFAULT CHARACTER SET latin1 */;
-USE `fxsmhrmnvc`;
-
 SET NAMES utf8mb4;
 
 CREATE TABLE `authors` (
