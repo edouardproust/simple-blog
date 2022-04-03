@@ -4,7 +4,7 @@ redirect_if_not_connected('../pages/login.php');
 
 require_once '../includes/functions/admin_dashboard.php';
 
-$title = greetings(credentials()['username']);
+$title = greetings(ADMIN_USERNAME);
 require '../includes/header.php';
 
 ?>

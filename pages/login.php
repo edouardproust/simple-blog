@@ -31,11 +31,11 @@ require_once '../includes/header.php';
       <form action="" method="POST">
         <div class="form-group">
           <label>Username</label>
-          <input type="text" name="username" value="admin" class="form-control">
+          <input type="text" name="username" class="form-control">
         </div>
         <div class="form-group">
           <label>Password</label>
-          <input type="password" name="password" value="php" class="form-control">
+          <input type="password" name="password" class="form-control">
         </div>
         <button type="submit" class="btn btn-primary">Sign in</button>
       </form>
@@ -45,10 +45,9 @@ require_once '../includes/header.php';
       </p>
     </div>
     <div class="col-md-6">
-      <ul>
-        <li>The form is prefilled, so just click the "Sign in" button.</li>
-        <li>Credentials: username: <b>admin</b> / password: <b>php</b></li>
-        <li>Try random text to display an error message.</li>
+      <ul>To try the admin panel, use these credentials to connect:
+        <li>username: <b>admin</b></li>
+        <li>password: <b>1234</b></li>
       </ul>
     </div>
   </div>

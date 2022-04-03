@@ -11,6 +11,9 @@ const DB_NAME = 'main';
 const DB_USERNAME = 'root';
 const DB_PASSWORD = 'root';
 
+const ADMIN_USERNAME =  'admin';
+const ADMIN_PASSWORD = 'admin';
+
 const MAIN_MENU = [
     ['index.php', 'Home'],
     ['pages/newsletter.php', 'Newsletter']

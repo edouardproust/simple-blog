@@ -1,11 +1,7 @@
 <?php
-function credentials() 
-{
-    return [
-        'username' => 'admin',
-        'password_hashed' => '$2y$13$ew/.dV4.LdNxbCBkdxaELe4ozhg395dZ5jZCM/1sEuXUFUkrIlubi'
-    ];
-}
+
+require_once dirname(__DIR__, 2) . '/config.php';
+
 function is_connected(): bool
 {
     if( session_status() === PHP_SESSION_NONE ) {
@@ -21,7 +17,9 @@ function redirect_if_not_connected(string $redirect_location): void
 }
 function login_verify(): ?bool
 {
-    if ($_POST['username'] === credentials()['username'] && password_verify($_POST['password'], credentials()['password_hashed']) === true ) {
+    $adminHashedPassword = password_hash(ADMIN_PASSWORD, PASSWORD_DEFAULT);
+
+    if ($_POST['username'] === ADMIN_USERNAME && password_verify($_POST['password'], $adminHashedPassword) === true ) {
     session_start();
         $_SESSION['connected'] = 1;
         header('Location: ../admin/index.php');

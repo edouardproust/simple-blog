@@ -67,12 +67,12 @@ try {
                         $has_featured_image = false;
                         if (!empty($post->featured_image)) :
                             $has_featured_image = true; ?>
-                            <a href="post.php?id=<?= $post->id ?>">
+                            <a href="blog/post.php?id=<?= $post->id ?>">
                                 <img class="card-img-top" style="max-height: 200px; object-fit: cover;" src="<?= $images_folder . $post->featured_image ?>" alt="<?= htmlentities($post->title) ?>">
                             </a>
                         <?php endif ?>
                         <div class="card-body">
-                            <a href="post.php?id=<?= $post->id ?>">
+                            <a href="blog/post.php?id=<?= $post->id ?>">
                                 <h2><?= htmlentities($post->title) ?></h2>
                             </a>
                             <div class="mb-4">
@@ -85,7 +85,7 @@ try {
                             </div>
                             <?= nl2br(htmlentities($post->getExerpt($has_featured_image))) ?>
                             <div>
-                                <a href="post.php?id=<?= $post->id ?>">
+                                <a href="blog/post.php?id=<?= $post->id ?>">
                                     <button class="btn btn-primary btn-sm mt-4">Read more</button>
                                 </a>
                             </div>
