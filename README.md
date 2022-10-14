@@ -1,6 +1,6 @@
 # Simple Blog
 
-A simple extra-light blog, made with vanilla PHP (no framework) and adminer. Allows to create, edit and delete articles and add post thumbnails.
+A simple extra-light blog, made with vanilla PHP (no framework), Bootstrap and adminer. Allows to create, edit and delete articles and add post thumbnails.
 
 👉 [**Live demo**](http://phpstack-856558-2958540.cloudwaysapps.com/)
 
