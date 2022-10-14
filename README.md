@@ -8,3 +8,8 @@ A simple blog, made with vanilla PHP (no framework) and adminer. Allows to creat
 - PHP (no framework)
 - Bootstrap 5
 - Adminer
+
+## Deployment
+
+1. Clone repository: `git clone https://github.com/edouardproust/simple-blog.git .`
+2. Rename `config.dev.php` into `config.php` and edit it.
