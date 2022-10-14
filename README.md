@@ -7,3 +7,4 @@ A simple blog, made with vanilla PHP (no framework) and adminer. Allows to creat
 ## Technologies
 - PHP (no framework)
 - Bootstrap 5
+- Adminer
